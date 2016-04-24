@@ -1,6 +1,6 @@
 Ext.application({
     name:'app',
-    requires : ['Ext.window.MessageBox', 'app.extJsBook'],
+    requires : ['Ext.window.MessageBox', 'app.extJsBook','app.model.Users'],
     launch: function () {
 
         var book = Ext.create('app.extJsBook');
