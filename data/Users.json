@@ -1,7 +1,7 @@
 [
-  {name:'David',email:'david@motorola.com',age:32, employed:true},
-  {name:'Jonny',email:'jonny@motorola.com',age:20, employed:false},
-  {name:'antony',email:'antony@motorola.com',age:42.5, employed:true},
-  {name:'stefiry',email:'stefiry@motorola.com',age:26, employed:true},
-  {name:'falny',email:'falny@motorola.com',age:23, employed:true}
+  {"name":"David",  "email":"david@motorola.com",  "age":32,   "employed":true},
+  {"name":"Jonny",  "email":"jonny@motorola.com",  "age":20,   "employed":false},
+  {"name":"antony", "email":"antony@motorola.com", "age":42.5, "employed":true},
+  {"name":"stefiry","email":"stefiry@motorola.com","age":26,   "employed":true},
+  {"name":"falny",  "email":"falny@motorola.com",  "age":23,   "employed":true}
 ]

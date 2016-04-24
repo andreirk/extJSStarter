@@ -19,7 +19,7 @@ Ext.define('app.model.Users',{
     ],
     proxy:{
         type:'ajax',
-        url:'/extJSStarter/data/Users.json'
+        url:'http://localhost/extJSStarter/data/Users.json'
     }
 });
 

@@ -3,7 +3,18 @@ Ext.application({
     requires : ['Ext.window.MessageBox', 'app.extJsBook','app.model.Users'],
     launch: function () {
 
-        var book = Ext.create('app.extJsBook');
+     //   var book = Ext.create('app.extJsBook');
+
+        var extJS_UserGrid = Ext.create('Ext.grid.Panel', {
+            title:'Ext JS Users List',
+            store:extJS_UserStore,
+            columns:[
+                {header:'Name', dataIndex:'name'},
+                {header:'Age', dataIndex:'age', width:30},
+                {header:'Employed', dataIndex:'employed'},
+                {header:'Email', dataIndex:'email',flex:1}
+            ]
+        });
 
         // Ext.create('Ext.container.Viewport',{
         //     layout:'fit',
@@ -37,17 +48,24 @@ Ext.application({
         // });
 
         Ext.create("Ext.tab.Panel",{
-         //   width:400,
-         //   height:400,
+            width:400,
+            height:400,
             activeTab:0,
-            layout:'fit',
+         //   layout:'fit',
             //layout:'ablolute',
             //x:10, y:10,
+            dockedItems:[{
+                xtype:'toolbar',
+                dock:'bottom',
+                items:[{text:'Docked Buttom'}]
+            }],
             renderTo: document.body,
             items:[
                 {
                     title:'Page 1',
-                    html:'Page1'
+                    items:[
+                        extJS_UserGrid
+                    ]
                 },
                 {
                     xtype:'panel',
