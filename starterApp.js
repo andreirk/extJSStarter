@@ -50,7 +50,7 @@ Ext.application({
         Ext.create("Ext.tab.Panel",{
             width:400,
             height:400,
-            activeTab:0,
+         //   activeTab:0,
          //   layout:'fit',
             //layout:'ablolute',
             //x:10, y:10,
